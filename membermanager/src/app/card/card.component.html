@@ -1,0 +1,17 @@
+<div *ngFor="let member of members" class="master">
+<div class="card">
+    
+    <img src="{{member?.imageUrl}}" id="imageProfil">
+    <p id="idtext">{{member?.id}}</p>
+    <hr>
+    <p id="nametext">{{member?.name}}</p>
+    <p>{{member?.email}}</p>
+    <p>{{member?.phone}}</p>
+    <div class="buttondiv">
+        <button  class="btnEdit" >edit</button>
+        <button class="btnDel" (click)="deleteMember(member)">delete</button>
+    </div>
+
+</div>
+
+</div>
